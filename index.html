@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -11,20 +11,15 @@
 	<!-- FONT AWESOME -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Bootstrap library -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 	<!-- MAIN CSS -->
 	<link rel="stylesheet" href="css/style.css">
-
-	<!-- MAIN JS -->
-	<script src="js/main.js" type="text/javascript"></script>
 
 	<!-- MAIN JQUERY -->
 	<script src="js/jquery.js" type="text/javascript"></script>
@@ -32,139 +27,153 @@
 </head>
 
 <body>
-
-	<!-- NAVBAR -->
-	<section class="container-fluid mainHeader fadeIn" id="navbar">
-		<div class="navbar navbar-inverse">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">Learn with InfoSecLab</a>
-				</div>
-				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav">
-						<li class="active" data-toggle="collapse" data-target=".navbar-collapse.in"><a href="#" class="neon-text-1">Home</a>
-						</li>
-						<li><a href="#about" data-toggle="collapse" data-target=".navbar-collapse.in" class="neon-text-1">About</a></li>
-						<li><a href="#skills" data-toggle="collapse" data-target=".navbar-collapse.in" class="neon-text-1">Free Courses</a></li>
-						<li><a href="#experience" data-toggle="collapse"
-								data-target=".navbar-collapse.in" class="neon-text-1">Experience</a></li>
-						<li><a href="#projects" data-toggle="collapse" data-target=".navbar-collapse.in" class="neon-text-1">Projects</a>
-						</li>
-						<li><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in" class="neon-text-1">Contact Me</a>
-						</li>
-					</ul>
-				</div><!--/.nav-collapse -->
+	<header class="navbar navbar-expand-lg bd-navbar fixed-top header-section" data-bs-theme="dark">
+		<nav class="container container-xxl bd-gutter flex-wrap flex-lg-nowrap" style="">
+			<a class="navbar-brand" href="/">
+				<img src="img/profile.png" class="" alt="Go to Home Page">
+				<span>Learn with</span><span class="ms-2 fs-5 badge text-bg-warning logo-brand-name-text">InfoSecLab</span>
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="#courses">Free Courses</a></li>
+					<li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+					<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+					<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+					<li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
+				</ul>
 			</div>
+		</nav>
+	</header>
+
+	<section class="home-section container container-xxl">
+		<div class="card card-transparent mb-5">
+            <div id="main-banner-carousel" class="carousel carousel-dark slide">
+                <div class="carousel-inner d-flex">
+                    <div class="card-body carousel-item active">
+                        <p class="card-text fs-1">Welcome to InfoSecLab</p>
+                        <p class="card-text fs-4">Learn from live hands-on projects...</p>
+                        <p class="card-text fs-4">Set up your own home lab with live projects.</p>
+                    </div>
+                </div>
+				<!--  Uncomment carousel buttons after adding more carousal items  -->
+				<!--
+                <button class="carousel-control-prev" type="button" data-bs-target="#main-banner-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#main-banner-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+				-->
+            </div>
 		</div>
 	</section>
 
-	<!-- HOME -->
-	<section class="home fadeIn">
-		<div class="header-section">
-			<div class="container checkOutMyPortfolio">
-				<img src="img/profile.png">
-				<h2 class="neon-text">Welcome to InfoSecLab!</span></h2>
-				<h2 class="neon-text">Learn from live handson projects!</span></h2>
-				<p>Set up your own home lab with live projects</p>
-
-			</div>
-		</div>
-	</section>
-
-	<!-- ABOUT US -->
-
-	<section class="container-fluid about fadeIn" id="about">
-		<h3 class="neon-text">Java Bootcamp</h3>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-3 col-md-6">
-					<img class="yourPic img-responsive" src="img/profile.png" alt="InfoSecLab">
+	<section class="container container-xxl" id="courses">
+		<div class="card card-transparent mb-5 p-4">
+			<div class="row g-0">
+				<div class="col-md-4">
+					<div class="card-body p-0">
+						<img class="img-responsive rounded" src="img/2.jpg" alt="skills" width="410">
+					</div>
 				</div>
-				<div class="col-sm-9 col-md-6">
-					<p>
-					<div class="panel-group" id="accordion">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-										Go into 90 Century</a>
-								</h4>
-							</div>
-							<div id="collapse1" class="panel-collapse collapse in">
-								<div class="panel-body">History of Programing Language</div>
-							</div>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-										Installation</a>
-								</h4>
-							</div>
-							<div id="collapse1" class="panel-collapse collapse in">
-								<div class="panel-body">Create your Lab enviornment</div>
-							</div>
-							
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-									<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-										Programming Concept</a>
-								</h4>
-							</div>
-							<div id="collapse1" class="panel-collapse collapse in">
-								<div class="panel-body">Class and Objects</div>
-							</div>
-							</div>
+				<div class="col-md-8">
+					<div class="card-body p-0">
+						<div class="list-group">
+							<a href="#go_to_past" aria-controls="go_to_past" class="list-group-item list-group-item-action" data-bs-toggle="collapse" role="button" aria-expanded="true">
+								<h5 class="pb-1">Go into 90 Century</h5>
+								<div class="collapse show" id="go_to_past">
+									<div class="card card-body bg-transparent border-0 p-1">
+										History of Programing Language
+									</div>
+								</div>
+							</a>
+							<a href="#go_to_installation" aria-controls="go_to_installation" class="list-group-item list-group-item-action" data-bs-toggle="collapse" role="button" aria-expanded="true">
+								<h5 class="pb-1">Installation</h5>
+								<div class="collapse show" id="go_to_installation">
+									<div class="card card-body bg-transparent border-0 p-1">
+										Create your Lab enviornment
+									</div>
+								</div>
+							</a>
+							<a href="#go_to_concepts" aria-controls="go_to_concepts" class="list-group-item list-group-item-action" data-bs-toggle="collapse" role="button" aria-expanded="true">
+								<h5 class="pb-1">Programming Concepts</h5>
+								<div class="collapse show" id="go_to_concepts">
+									<div class="card card-body bg-transparent border-0 p-1">
+										Class and Objects
+									</div>
+								</div>
+							</a>
 						</div>
 					</div>
-					</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
-	
+	<!-- EXPERIENCE -->
+	<!--
+	<section class="home-section container container-xxl" id="experience">
+		<div class="card mb-5 p-4">
+			<div class="card-body text-center">
+			</div>
+		</div>
+	</section>
+	-->
+
 	<!-- CONTACT ME -->
-	<section class="contactMe fadeIn">
-		<div class="contact-section" id="contact">
-			<div class="container">
-				<h3 class="neon-text">contact me: ashishgoyaleu@gmail.com</h3>
+	<section class="container container-xxl contact-me mb-5">
+		<div class="card card-transparent contact-section" id="contact">
+			<div class="card-body">
+				<div class="card-title pb-2">
+					<span class=" fs-4 fw-semibold">Contact me:</span>
+					<span class="ms-1 fs-5">ashishgoyaleu@gmail.com</span>
+				</div>
 				<div class="contact-details">
-					<form>
-						<div class="col-md-6 contact-left">
-							<input type="text" class="text" value="Name *" onfocus="this.value = '';"
-								onblur="if (this.value == '') {this.value = 'Name *';}">
-							<input type="text" class="text" value="Email *" onfocus="this.value = '';"
-								onblur="if (this.value == '') {this.value = 'Email *';}">
-							<input type="text" class="text" value="phone *" onfocus="this.value = '';"
-								onblur="if (this.value == '') {this.value = 'Phone *';}">
+					<form class="row">
+						<div class="row">
+							<div class="col-md-6 contact-left">
+								<div class="form-floating mb-3">
+									<input id="name-input" type="text" class="form-control" placeholder="Name">
+									<label for="name-input">Name *</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input id="email-input" type="text" class="form-control" placeholder="abc@xyz.com">
+									<label for="email-input">Email *</label>
+								</div>
+								<div class="form-floating mb-3">
+									<input id="phone-input" type="text" class="form-control" placeholder="Phone number">
+									<label for="phone-input">Phone *</label>
+								</div>
+							</div>
+							<div class="col-md-6 contact-right">
+								<div class="form-floating mb-3">
+									<textarea id="message-input" class="form-control" placeholder="Message"></textarea>
+									<label for="message-input">Message *</label>
+								</div>
+							</div>
 						</div>
-						<div class="col-md-6 contact-right">
-							<textarea value="Message" onfocus="this.value = '';"
-								onblur="if (this.value == '') {this.value = 'Message';}">Message *</textarea>
-							<input type="submit" value="Send Message" />
+						<div class="row">
+							<div style="display: flex; justify-content: right;">
+								<button type="submit" class="btn btn-primary px-5">Send Message</button>
+							</div>
 						</div>
-						<div class="clearfix"> </div>
 					</form>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="container-fluid mainFooter fadeIn">
-		<div class="container">
-			<div class="footer-top">
-				<p>&copy; 2024 <a target="_blank"
-						href="#">InfoSecLab</a>
-				</p>
+	<section class="w-100 main-footer">
+		<div class="card text-bg-dark rounded-0 border-0 ">
+			<div class="card-body rounded-0 border-0 footer-top">
+				<p class="fs-6 m-0">&copy; 2024 <a target="_blank" href="#">InfoSecLab</a></p>
 			</div>
-			<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+		</div>
 	</section>
 </body>
 
